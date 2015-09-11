@@ -114,4 +114,19 @@ maths(25,5,"whatever");
 
 maths(25,5,4);
 
+///Repeating a string x number of times.
+
+function repeatString (string,num){
+    var finalString= "";
+    for (i = 0; i< num; i++) {
+        finalString = finalString + string;
+    }
+    return finalString;
+}
+
+repeatString("hello",2);
+
+repeatString("hello",5);
+
+
 
