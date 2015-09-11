@@ -38,3 +38,24 @@ tellMeTheCharacter("Hello", 5 );
 
 tellMeTheCharacter("", 5 );
 
+///Create a function that add two numbers and see what happens when you input
+//something that is not a number.
+
+function addNumbers (num1,num2){
+    return (num1 + num2)
+}
+
+addNumbers(5,6);
+
+addNumbers(10,-6);
+
+addNumbers("love","hate");
+
+//The function returns "lovehate"
+
+addNumbers("love",7);
+
+//function returns "love7"
+
+
+
