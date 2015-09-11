@@ -59,3 +59,25 @@ addNumbers("love",7);
 
 
 
+//Function that multiplies two numbers
+
+function multiply (num1,num2){
+    return num1*num2;
+}
+
+multiply(5,5);
+
+multiply(5,-5);
+
+multiply("hello","hello");
+
+//Function returns "NaN"
+
+multliply("hello",5);
+
+//Tonicdev returns "ReferenceError {}"
+
+
+
+
+
