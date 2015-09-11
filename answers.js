@@ -138,3 +138,19 @@ function reverse(s){
 reverse("hello");
 
 reverse("ulaize");
+
+//function to get factorial of a number
+
+function fact(num) {
+   if(num===0) {
+      return 1;
+   }
+   else {
+       return num * fact(num-1);
+   }
+}
+
+fact(5);
+fact(10);
+fact(4);
+fact(-3);
