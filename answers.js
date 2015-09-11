@@ -81,3 +81,37 @@ multliply("hello",5);
 
 
 
+//I created a function that provides a few arethmetic operations
+
+function maths (num1,num2,string){
+    if(string==="add"){
+        return num1+num2;
+    }
+    else if (string==="subtract"){
+        return num1-num2;
+    }
+    else if (string==="mult"){
+        return num1*num2;
+    }
+    else if (string==="div"){
+        return num1/num2;
+    }
+    else{
+        return 0;
+    }
+}
+
+
+maths(25,5,"add");
+
+maths(25,5,"subtract");
+
+maths(25,5,"mult");
+
+maths(25,5,"div");
+
+maths(25,5,"whatever");
+
+maths(25,5,4);
+
+
