@@ -129,4 +129,12 @@ repeatString("hello",2);
 repeatString("hello",5);
 
 
+//function that reverses the order of the characters in a string
 
+function reverse(s){
+    return s.split("").reverse().join("");
+}
+
+reverse("hello");
+
+reverse("ulaize");
