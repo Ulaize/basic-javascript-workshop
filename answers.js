@@ -181,4 +181,17 @@ myWords.sort();
 
 myWords.sort(function(a, b){return b-a});  
 
+//Capitalise a word/phrase
 
+function capitalize( string )
+{
+   var chunks = string.split(" ");
+   for (var i = 0; i < chunks.length; i++)
+   {
+       var u = chunks[i].charAt(0).toUpperCase();
+       chunks[i] = u + chunks[i].substr(1).toLowerCase();
+   }
+   return chunks.join(" ");
+}
+
+capitalize("what is up?");
