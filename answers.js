@@ -1,6 +1,6 @@
 //Javascript basics
 
-//Function that returns the first character of a string
+//Function that returns the first character of a word/phrase
 
 function firstCharacter (string) {
     return string[0];
@@ -13,7 +13,7 @@ firstCharacter("Ulaize");
 
 firstCharacter("");
 
-//Function that returns the last character of a string
+//Function that returns the last character of a word/phrase
 
 function lastCharacter (string) {
     return string[string.length-1]
@@ -25,11 +25,11 @@ lastCharacter("Ulaize");
 
 lastCharacter("");
 
-//Function that returns the character of a string and you chose the position 
+//Function that returns the character of a word/phrase and you chose the position 
 //of the character.
 
 function tellMeTheCharacter (string,number){
-    return string[number-1]
+    return string[number]
 }
 
 tellMeTheCharacter("What's up?",3);
@@ -129,7 +129,7 @@ repeatString("hello",2);
 repeatString("hello",5);
 
 
-//function that reverses the order of the characters in a string
+//function that reverses the order of the characters in a word/phrase 
 
 function reverse(s){
     return s.split("").reverse().join("");
@@ -154,3 +154,31 @@ fact(5);
 fact(10);
 fact(4);
 fact(-3);
+
+
+//Function that returns the longest word in a phrase or paragraph.
+//In case there are two of the same length, the first occurance is returned.
+//Finding this exercise difficult and draining my energy
+//I am going to move to the next exercise but going to commit it for now.
+
+function words (x){
+   var y="";
+    for ( i=0 ; i < x.length; i++){
+        if (x[i] == "," || x[i] == ".") {
+           y  += " ";
+        }
+        else{
+            y += x[i];
+    
+        }
+    }
+    return y.split(' ');
+}
+
+var myWords = words("i love chocolate, pizza, and sometimes ice cream. I am really unhealthy.");
+
+myWords.sort();
+
+myWords.sort(function(a, b){return b-a});  
+
+
