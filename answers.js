@@ -213,14 +213,46 @@ someNum[10];
 
 //Function that filters an array so that only the truthy values are returned.
 
+//Version 1
 
 var newArray = [false, 0, "", true, "0", "false"];
 
 function truthyValues (value) {
-  return value == true;
+  return Boolean(value);
 }
 
 newArray.filter(truthyValues);
+
+
+//Version 2
+
+function filterTruthy(newArray) {
+     var filteredArray =[];
+    for (var i=0; i < newArray.length ; i++){
+        if (newArray[i]){
+            filteredArray.push(newArray[i]); 
+        }
+    }
+    return filteredArray;
+   
+}
+
+
+
+var myNewArray = [false, 0, "", true, "0", "false"];
+
+filterTruthy(myNewArray);
+
+
+//version 3
+
+function shortFilterTruthy(anArray) {
+    return newArray.filter(Boolean);
+}
+
+var newArray = [false, 0, "", true, "0", "false"];
+
+shortFilterTruthy(newArray);
 
 //Write a function that takes an array of numbers, 
 //and returns the sum of all the numbers in the array.
