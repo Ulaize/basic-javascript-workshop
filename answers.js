@@ -237,8 +237,6 @@ function filterTruthy(newArray) {
    
 }
 
-
-
 var myNewArray = [false, 0, "", true, "0", "false"];
 
 filterTruthy(myNewArray);
@@ -254,11 +252,20 @@ var newArray = [false, 0, "", true, "0", "false"];
 
 shortFilterTruthy(newArray);
 
-//Write a function that takes an array of numbers, 
-//and returns the sum of all the numbers in the array.
+//Function that add numbers in an array
 
 
+var arrayOfNumbers = [1,1,2,3,5];
 
+function addNumbers (x) {
+    var total = 0;
+    for (var i = 0; i < x.length; i++) {
+    total += x[i];}
+    return total;
+}
+
+
+addNumbers(arrayOfNumbers);
 
 
 
