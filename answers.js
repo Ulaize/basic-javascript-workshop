@@ -211,18 +211,29 @@ someNum[10];
 
 
 
-//Write a function that takes an array, and returns a filtered array. The filtered array should only contain the truthy values from the initial array. Hint: there is an array method called “filter” that can help you with this :)
+//Function that filters an array so that only the truthy values are returned.
+
+
+var newArray = [false, 0, "", true, "0", "false"];
+
+function truthyValues (value) {
+  return value == true;
+}
+
+newArray.filter(truthyValues);
+
+//Write a function that takes an array of numbers, 
+//and returns the sum of all the numbers in the array.
 
 
 
 
 
-//Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
 
-
-
-
-//Write a function that takes two arrays, and returns an array of all elements that are only in one array. For example, with [1,2,3] and [1,2,4,5] the function should return [3,4,5]. Test your function on different inputs. Hint: you should look up array methods indexOf and slice.
+//Write a function that takes two arrays, and returns an array of all elements 
+//that are only in one array. For example, with [1,2,3] and [1,2,4,5] the function
+//should return [3,4,5]. Test your function on different inputs. Hint: you should 
+//look up array methods indexOf and slice.
 
 
 
