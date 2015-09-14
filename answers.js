@@ -211,7 +211,7 @@ someNum[10];
 
 
 
-//Function that filters an array so that only the truthy values are returned.
+//Function that filters a collection of elements so that only the truthy values are returned.
 
 //Version 1
 
@@ -252,7 +252,7 @@ var newArray = [false, 0, "", true, "0", "false"];
 
 shortFilterTruthy(newArray);
 
-//Function that add numbers in an array
+//Function that adds a collection of numbers
 
 
 var arrayOfNumbers = [1,1,2,3,5];
