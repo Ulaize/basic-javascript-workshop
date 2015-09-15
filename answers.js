@@ -275,5 +275,50 @@ addNumbers(arrayOfNumbers);
 //look up array methods indexOf and slice.
 
 
+var array1 =[1,2,3];
 
+var array2=[1,2,4,5];
 
+function sliceAndCompose (x,y){
+   var newArray =[];
+   for (var i=0; i < x.length ; i++){
+            newArray.push(x[i]); 
+    }
+   for (var i=0; i < y.length ; i++){
+            newArray.push(y[i]); 
+    }
+    for (var i=0; i < newArray.length ; i++){
+        if (newArray.indexOf(newArray[i])>1){
+            newArray.slice(i, 1);
+        }
+    }
+    
+    return newArray;
+}
+
+sliceAndCompose(array1,array2);
+
+var array1 =[1,2,3];
+
+var array2=[1,2,4,5];
+
+function sliceAndCompose (x,y){
+    var newArray=[];
+    for (var i=0; i < y.length ; i++){
+         for (var i=0; i < x.length ; i++){
+             if (y[i] !== x[i]){
+                newArray.push(y[i]);
+             }
+        }          
+    }
+    for (var i=0; i < x.length ; i++){
+         for (var i=0; i < y.length ; i++){
+             if (x[i] !== y[i]){
+                newArray.push(x[i]);
+             }
+        }          
+    }
+    return newArray;
+}
+  
+sliceAndCompose(array1,array2);
